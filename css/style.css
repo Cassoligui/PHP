@@ -9,12 +9,17 @@
 
 /* --------------------------- Form --------------------------- */
 
+input{
+    border-color: #2596be;
+}
+
 #input-data {
     width: 90vw;
     font-family: Ubuntu;
     margin: 0 auto;
     margin-top: 5vh;
     display: flex;
+    border-color: #2596be;
 }
 
 .input-text {
@@ -77,36 +82,53 @@ input::-webkit-inner-spin-button {
 
 }
 
-.nav-item{
+.nav-item {
     padding: 1px;
-    
+
 }
 
-.nav-link{
+.nav-link {
     color: #000;
 }
-.modal{
-    align-content:center;
-    width:120%;
-    height:120%;
-}
 
-.modal-body{
-    width:110%;
-    height:110%;
-}
+/* --------------------------- Modal --------------------------- */
+
+.modal {
+    text-align: center;
+    padding: 0!important;
+  }
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+ 
 .modal-content {
     background-color: #fefefe;
     border: 1px solid #888;
-    width: 130%; 
-  }
-  .btn-primary{
+    width: 130%;
+}
+
+.btn-primary {
     background-color: #2596be;
-    border:#2596be;
-  }
-#send{
+    border: #2596be;
+}
+
+#send {
     background-color: #439037;
 }
+
+#modalUser{
+    align-items:center;
+}
+
 /* --------------------------- Table --------------------------- */
 
 #myTable {

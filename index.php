@@ -19,6 +19,7 @@
     </ul>
     <!-- end header !-->
 </head>
+<!-- modal new user !-->
 <div class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -35,7 +36,6 @@
                             <input id="name" class="input-text" placeholder="Name" type="text" required />
                             <input id="email" class="input-text" placeholder="Email" type="email" required />
                             <input id="phone" class="input-text" placeholder="Phone" type="text" required />
-
                         </section>
                     </div>
                 </form>
@@ -47,6 +47,7 @@
         </div>
     </div>
 </div>
+<!-- end modal !-->
 <body>
     <div class="container-fluid">
         <h2 id="table-title">Users</h2>

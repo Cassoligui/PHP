@@ -14,17 +14,21 @@ function addToTable() {
     let cell3 = row.insertCell(2);
     let cell4 = row.insertCell(3);
     let cell6 = row.insertCell(4);
+   
     row.id = tableSize; //Adicionando o id no elemento a ser criado
 
     //Criando o codigo do botão para remover a linha
-    let btnCode = "<button class='remove-btn' onclick='removeToTable(this)'>Remover</button>";
+    let btnAlter = "<button class='btn btn-primary btn-sm' background='red' onclick='removeToTable(this)'>Alter</button>";
+    let btnRemove = "<button class='btn btn-primary btn-sm' background='red' onclick=''>Remove</button>";
 
     //Preenchendo as celulas da linha
     cell1.innerHTML = tableSize;
     cell2.innerHTML = name;
     cell3.innerHTML = email;
     cell4.innerHTML = phone;
-    cell6.innerHTML = btnCode;
+    cell6.innerHTML = btnRemove;
+    cell6.innerHTML = btnAlter
+    
 
     //Limpando os campos de inserção de dados
     document.getElementById('name').value = "";
@@ -45,4 +49,8 @@ function removeToTable(id){
 
     //Retornando 'false' para impedir o reload da pagina
     return false;
+}
+
+function updateToTable(id){
+
 }
